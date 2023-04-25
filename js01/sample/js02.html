@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>JS練習</title>
+</head>
+<body>
+<h1 id="echo">JS練習</h1>
+
+
+
+<script>
+const n =  Math.ceil(Math.random()*100 );
+console.log(n);
+if(n >= 95){
+  document.querySelector("#echo").innerHTML= "大吉";
+}else if(n >= 80){
+  document.querySelector("#echo").innerHTML= "中吉";
+}else if(n >= 50){
+  document.querySelector("#echo").innerHTML= "小吉";
+}else if(n >= 10){
+  document.querySelector("#echo").innerHTML= "吉";
+}else if(n <= 9){
+  document.querySelector("#echo").innerHTML= "凶";
+}
+
+
+
+
+</script>
+</body>
+</html>
